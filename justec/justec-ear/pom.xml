@@ -55,7 +55,7 @@
 		</dependency>
 		<dependency>
 			<groupId>ec.com.justec</groupId>
-			<artifactId>jsutec-intranet-web</artifactId>
+			<artifactId>justec-intranet-web</artifactId>
 			<version>1.1-SNAPSHOT</version>
 			<type>war</type>
 		</dependency>
