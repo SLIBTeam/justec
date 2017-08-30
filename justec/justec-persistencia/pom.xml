@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ec.com.justec</groupId>
+    <artifactId>justec</artifactId>
+    <version>1.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>justec-persistencia</artifactId>
+  <name>Persistencia</name>
+  <description>Contiene el mapeo Objeto - Relacional de las entidades más los componentes que manipulan estas entidades.</description>
+  <dependencies>
+	<dependency>
+		<groupId>ec.com.justec</groupId>
+		<artifactId>justec-comun</artifactId>
+		<version>1.1-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>6.8.1</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.openejb</groupId>
+		<artifactId>openejb-core</artifactId>
+		<version>4.7.4</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc6</artifactId>
+		<version>11.2.0</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>4.2.14.Final</version>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
+  <!-- xx -->
+  <properties>  
+    <!-- Default name of file for filtering -->  
+    <filter.name>production</filter.name>  
+  </properties>  
+  <!-- xx -->
+  <!-- xx -->
+  <profiles>
+  	<profile>  
+    <id>production</id>  
+    <properties>  
+        <filter.name>production</filter.name>  
+    </properties>  
+</profile>  
+<profile>  
+    <id>development</id>  
+    <properties>  
+        <filter.name>development</filter.name>  
+    </properties>  
+</profile>  
+  </profiles>
+  <!-- xx -->
+</project>

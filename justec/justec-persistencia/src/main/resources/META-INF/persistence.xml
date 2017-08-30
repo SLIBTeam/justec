@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<!--<persistence-unit name="reps-persistencia" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/RepsDS</jta-data-source>
+		<properties>
+			<property name="hibernate.show_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.format_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="pes-persistencia" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/PesDS</jta-data-source>
+		<properties>
+			<property name="hibernate.show_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.format_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="ConsultaNombresPU" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/AdmDS</jta-data-source>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.show_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.format_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+		</properties>
+	</persistence-unit>
+	<persistence-unit name="CnmoPU" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/CnmoDS</jta-data-source>
+		<properties>
+			<property name="hibernate.show_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.format_sql" value="${hibernate.showSql}"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+		</properties>
+	</persistence-unit>-->
+</persistence>

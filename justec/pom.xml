@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ec.com.justec</groupId>
+	<artifactId>justec</artifactId>
+	<version>1.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Control Documental</name>
+	<description>Aplicacion para control documental</description>
+	<modules>
+		<module>justec-api</module>
+		<module>justec-comun</module>
+		<module>justec-persistencia</module>
+		<module>justec-negocio</module>
+		<module>justec-intranet-web</module>
+		<module>justec-internet-web</module>
+		<module>justec-internet-ws</module>
+		<module>justec-ear</module>
+		<module>justec-cliente</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.3</version>
+				<configuration>
+					<excludePackageNames></excludePackageNames>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<properties>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
